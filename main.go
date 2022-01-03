@@ -10,16 +10,9 @@ import (
 	"github.com/joho/godotenv"
 )
 
-var (
-	aki string
-	as  string
-	pn  string
-	si  string
-	ss  string
-)
-
 func main() {
 
+	// setting env
 	err := godotenv.Load()
 	if err != nil {
 		log.Fatal("Error loading .env file")
